@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milktea House</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="process_order.php" method="post">
+        <h2>Welcome to Our Milk Tea Shop</h2>
+        Name: <input type="text" name="customer_name"><br>
+        Address: <input type="text" name="customer_address"><br>
+        <hr>
+        <h3>Customize Your Milk Tea:</h3>
+        <select name="tea_flavor">
+            <option value="Okinawa">Okinawa ($80.00)</option>
+            <option value="Wintermelon">Wintermelon ($80.00)</option>
+            <option value="Cheese Cake">Cheese Cake ($90.00)</option>
+            <option value="Dark Choco">Dark Choco ($90.00)</option>
+            <option value="Salted Caramel">Salted Caramel ($85.00)</option>
+            <option value="Taro">Taro ($80.00)</option>
+            <option value="Choco Hazelnut">Choco Hazelnut ($85.00)</option>
+            <option value="Double Dutch">Double Dutch ($85.00)</option>
+            <option value="Strawberry">Strawberry ($85.00)</option>
+
+        </select><br>
+    
+        <h3>Cup Size:</h3>
+        <select name="cup_size">
+            <option value="Small">Small ($0.00)</option>
+            <option value="Medium">Medium ($10.00)</option>
+            <option value="Large">Large ($15.00)</option>
+        </select><br>
+    
+        <h3>Add-ons:</h3>
+        <input type="checkbox" name="add_ons[]" value="Cream Cheese"> Cream Cheese (+$20.00)<br>
+        <input type="checkbox" name="add_ons[]" value="Pearls"> Pearls (+$15.00)<br>
+        <input type="checkbox" name="add_ons[]" value="Jelly"> Jelly (+$10.00)<br>
+    
+        <input type="submit" value="Place Order">
+    </form>
+</body>
+</html>    
